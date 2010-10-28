@@ -59,7 +59,7 @@ function sumBoolToInt(input_array: array of Boolean; first: Integer;
 	i: integer;
 
 	Begin
-		setLength(sumIntToBool,high(input_array)+1);
+		setLength(sumBoolToInt,high(input_array)+1);
 		sumBoolToInt[0] := f(first, input_array[0]);
 		for i := 1 to high(input_array) do
 			Begin
@@ -107,12 +107,12 @@ function fIntToReal(x: Real; y: Integer): Real ;
 
 function fIntToBool(x: Boolean	; y: Integer) :Boolean;
     Begin
-		fIntToBool := x and (y > 0);
+		fIntToBool := x xor (y > 0);
     End;
 	
 function fBoolToInt(x: Integer	; y: Boolean) :Integer;
 	Begin
-		if (y) then fBoolToInt := x + 1;
+		if (y) then fBoolToInt := x + 1
 		else fBoolToInt := x - 1;
     End;
 
@@ -133,7 +133,7 @@ var
 intArray : array[0..3] of Integer = (1,2,3,4);
 boolArray : array[0..3] of boolean = (True,True,False,False);
 stringArray : array[0..3] of String = ('Shrik Shrik','Shrik Shrak','bool','La');
-charArray : array[0..3] of String = ('t','e','s','t');
+charArray : array[0..3] of Char = ('t','e','s','t');
 
 outRealArray : realArrT;
 outBoolArray : boolArrT;
@@ -172,7 +172,7 @@ Begin
 	
 	{sumStringToInt check}
 	writeln('sumStringToInt');
-	outIntArray := sumStringToInt (intArray, 42, @fStringToInt);
+	outIntArray := sumStringToInt (stringArray, 42, @fStringToInt);
 	
 	for i := 0 to high(outIntArray) do
 	Begin
