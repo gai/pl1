@@ -7,8 +7,8 @@ uses Math, Sysutils;
 
 {Types definitions for the step functions}
 Type intToRealStep 		= function (x: Real		; y: Integer) :Real;
-Type intToBoolStep 		= function (x: Boolean		; y: Integer) :Boolean;
-Type boolToIntStep 		= function (x: Integer	; y: Boolean	) :Integer;
+Type intToBoolStep 		= function (x: Boolean	; y: Integer) :Boolean;
+Type boolToIntStep 		= function (x: Integer	; y: Boolean) :Integer;
 Type stringToIntStep 	= function (x: Integer	; y: String	) :Integer;
 Type charToStringStep 	= function (x: String	; y: char	) :String;
 
@@ -34,6 +34,8 @@ function sumIntToReal(input_array: array of Integer; first: Real;
 			End;
 	End;
 
+	
+{This function receives an array of Integers, and returns an array of booleans}
 function sumIntToBool(input_array: array of Integer; first: Boolean;
 												f: intToBoolStep) : boolArrT;
 	var
@@ -48,6 +50,9 @@ function sumIntToBool(input_array: array of Integer; first: Boolean;
 			End;
 	End;
 
+	
+	
+{This function receives an array of booleans, and returns an array of Integers}
 function sumBoolToInt(input_array: array of Boolean; first: Integer;
 												f: boolToIntStep) : intArrT;
 	var
@@ -62,6 +67,8 @@ function sumBoolToInt(input_array: array of Boolean; first: Integer;
 			End;
 	End;
 
+	
+{This function receives an array of Strings, and returns an array of Integers}
 function sumStringToInt(input_array: array of String; first: Integer;
 												f: stringToIntStep) : intArrT;
 	var
@@ -76,6 +83,8 @@ function sumStringToInt(input_array: array of String; first: Integer;
 			End;
 	End;
 
+	
+{This function receives an array of chars, and returns an array of Strings}
 function sumCharToString(input_array: array of Char; first: String;
 												f: charToStringStep) : stringArrT;
 	var
@@ -89,25 +98,93 @@ function sumCharToString(input_array: array of Char; first: String;
 				sumCharToString[i] := f(sumCharToString[i-1], input_array[i]);
 			End;
 	End;
+{/****************************************************************************/}
 
-
-function f1(sum: Real; next: Integer): Real ;
+function fIntToReal(x: Real; y: Integer): Real ;
     Begin
-		f1 := sum+next;
+		fIntToReal := x+y;
+    End;
+
+function fIntToBool(x: Boolean	; y: Integer) :Boolean;
+    Begin
+		fIntToBool := x and (y > 0);
     End;
 	
+function fBoolToInt(x: Integer	; y: Boolean) :Integer;
+	Begin
+		if (y) then fBoolToInt := x + 1;
+		else fBoolToInt := x - 1;
+    End;
+
+function fStringToInt(x: Integer	; y: String	) :Integer;
+	Begin
+		fStringToInt := x + length(y);
+    End;
+	
+function fCharToString(x: String	; y: char	) :String;
+	Begin
+		fCharToString := concat(x ,y);
+    End;
+
+
+
+{******************************************************************************}
 var
 intArray : array[0..3] of Integer = (1,2,3,4);
-realArray : realArrT;
+boolArray : array[0..3] of boolean = (True,True,False,False);
+stringArray : array[0..3] of String = ('Shrik Shrik','Shrik Shrak','bool','La');
+charArray : array[0..3] of String = ('t','e','s','t');
+
+outRealArray : realArrT;
+outBoolArray : boolArrT;
+outIntArray : intArrT;
+outStringArray : stringArrT;
+
 i: integer;
 
 Begin
-
-	realArray := sumIntToReal (intArray, 12.2, @f1);
+	{sumIntToReal check}
+	writeln('sumIntToReal');
+	outRealArray := sumIntToReal (intArray, 12.2, @fIntToReal);
 	
-	for i := 0 to high(realArray) do
+	for i := 0 to high(outRealArray) do
 	Begin
-		writeln(realArray[i]);
+		writeln(outRealArray[i]);
+	End ;
+	
+	{sumIntToBool check}
+	writeln('sumIntToBool');
+	outBoolArray := sumIntToBool (intArray, False, @fIntToBool);
+	
+	for i := 0 to high(outBoolArray) do
+	Begin
+		writeln(outBoolArray[i]);
+	End ;
+	
+	{sumBoolToInt check}
+	writeln('sumBoolToInt');
+	outIntArray := sumBoolToInt (boolArray, 42, @fBoolToInt);
+	
+	for i := 0 to high(outIntArray) do
+	Begin
+		writeln(outIntArray[i]);
+	End ;
+	
+	{sumStringToInt check}
+	writeln('sumStringToInt');
+	outIntArray := sumStringToInt (intArray, 42, @fStringToInt);
+	
+	for i := 0 to high(outIntArray) do
+	Begin
+		writeln(outIntArray[i]);
+	End ;
+	
+	{sumCharToString check}
+	writeln('sumCharToString');
+	outStringArray := sumCharToString (charArray, 'hey', @fCharToString);
+	
+	for i := 0 to high(outStringArray) do
+	Begin
+		writeln(outStringArray[i]);
 	End ;
 End.
-
