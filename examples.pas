@@ -1,6 +1,6 @@
 // 065982415 somriguy@t2		036567055 gai@tx
 {The main Idea of this code is to define the types of the step functions so	}
-{the Scan functions could recieve it as a paramter					}
+{the Scan functions could recieve it as a paramter							}
 program q1;
 
 uses Math, Sysutils;
@@ -130,9 +130,9 @@ function fCharToString(x: String	; y: char	) :String;
 
 {******************************************************************************}
 var
-intArray : array[0..3] of Integer = (1,2,3,4);
+intArray : array[0..3] of Integer = (1,2,-3,4);
 boolArray : array[0..3] of boolean = (True,True,False,False);
-stringArray : array[0..3] of String = ('Shrik Shrik','Shrik Shrak','bool','La');
+stringArray : array[0..4] of String = ('Shrik Shrik','Shrik Shrak','bool','La','');
 charArray : array[0..3] of Char = ('t','e','s','t');
 
 outRealArray : realArrT;
@@ -188,3 +188,4 @@ Begin
 		writeln(outStringArray[i]);
 	End ;
 End.
+

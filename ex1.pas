@@ -34,7 +34,7 @@ function sumIntToReal(input_array: array of Integer; first: Real;
 			End;
 	End;
 
-	
+
 {This function receives an array of Integers, and returns an array of booleans}
 function sumIntToBool(input_array: array of Integer; first: Boolean;
 												f: intToBoolStep) : boolArrT;
@@ -50,8 +50,8 @@ function sumIntToBool(input_array: array of Integer; first: Boolean;
 			End;
 	End;
 
-	
-	
+
+
 {This function receives an array of booleans, and returns an array of Integers}
 function sumBoolToInt(input_array: array of Boolean; first: Integer;
 												f: boolToIntStep) : intArrT;
@@ -67,7 +67,7 @@ function sumBoolToInt(input_array: array of Boolean; first: Integer;
 			End;
 	End;
 
-	
+
 {This function receives an array of Strings, and returns an array of Integers}
 function sumStringToInt(input_array: array of String; first: Integer;
 												f: stringToIntStep) : intArrT;
@@ -83,7 +83,7 @@ function sumStringToInt(input_array: array of String; first: Integer;
 			End;
 	End;
 
-	
+
 {This function receives an array of chars, and returns an array of Strings}
 function sumCharToString(input_array: array of Char; first: String;
 												f: charToStringStep) : stringArrT;
