@@ -1,0 +1,106 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass heb-article
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הסיבוכיות של 
+\begin_inset Formula $a@b$
+\end_inset
+
+ היא 
+\begin_inset Formula $O\left(\mbox{length}\left(a\right)\right)$
+\end_inset
+
+.
+ לכן הסיכוביות של האיטרציה הראשונה של 
+\begin_inset Formula $\mbox{nrev}$
+\end_inset
+
+ היא 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+, האיטרציה השניה - 
+\begin_inset Formula $O\left(n-1\right)$
+\end_inset
+
+ וכך הלאה.
+ בסך הכל סיבוכיות זמן הריצה של הפונקציה - 
+\begin_inset Formula \[
+O\left(n\right)+O\left(n-1\right)+\dots+O\left(1\right)=O\left(\frac{n\left(n-1\right)}{2}\right)=O\left(n^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+סיבוכיות זמן הריצה של 
+\begin_inset Formula $irev$
+\end_inset
+
+ כפי שכתבנו - 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
