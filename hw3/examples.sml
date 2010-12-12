@@ -9,6 +9,9 @@ in
 	fun irev l = irev_t(l, []);
 end;
 
+irev ["h", "e", "l", "l", "o"];
+irev [[1,2,3], [4,5,6], [7], [8,9]];
+
 
 (* question 3 *)
 local
@@ -19,10 +22,25 @@ in
 		compList (f:'a->'a) i = f::map(comp(f))(compList(f)(i-1));  
 end;
 
+fun mul3 x = x*3;
+map(fn f => f(1))(compList mul3 10);
+map(fn f => f(1))(compList mul3 0);
+map(fn f => f(0))(compList mul3 10);
+fun fib (x,y) = (y+x, x+y+y); (* get two fibbonachi numbers, get return the next two *)
+map(fn f => f(0,1))(compList fib 8);
+
+
 (* question 4 *)
 (* use pivot - "quick sort" *)
 fun mySort lt [] = [] |
 		mySort lt (x::xs) = (mySort(lt)(List.filter (fn a => lt(a, x)) xs))@(x::mySort(lt)(List.filter (fn a => not(lt(a,x))) xs));
+		
+fun lair (x,y) = true; (* no order at all! *)
+fun lt (x,y) = x < y;
+mySort lt [123, 133, 889, 45, 7, ~33];
+mySort lair [123, 133, 889, 45, 7, ~33];
+fun listLt (x,y) = length(x) < length(y);
+mySort listLt [[], [1, 1, 1, 1], [2], [3, 3], [4], [5, 5, 6, 7, 8, 9, 10, 12, 44], [10000]];
 
 (* question 5 *)
 local
@@ -40,4 +58,12 @@ fun getPaths (E:(''a*''a) list) (v1:''a) (v2:''a) = if (v1=v2) then [[v1]] else
 		(List.filter (fn (z,w) => z=v1) E)
 	);
 end;
+
+getPaths [] 1 2; (* empty graph *)
+getPaths [(1,2), (2,3), (3,4), (4,5), (5,6)] 1 6; (* long one direction "bus" *)
+getPaths [(1,2), (2,3), (3,4), (4,5), (5,6)] 6 1;
+(* two directional "8" *)
+getPaths [(1,2), (2,1), (2,3), (3,2), (1,3), (3,1), (3,4), (4,3), (4,5), (5,3), (3,5)] 1 2;
+getPaths [(1,2), (2,1), (2,3), (3,2), (1,3), (3,1), (3,4), (4,3), (4,5), (5,3), (3,5)] 1 5;
+
 		
