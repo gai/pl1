@@ -1,4 +1,6 @@
-datatype ('a,'b) abtree = leaf | atree of 'a*('a,'b) abtree*('a,'b) abtree | btree of 'b*('b,'b) abtree*('b,'b) abtree;
+datatype ('a,'b) abtree = leaf | 
+                          atree of 'a*('a,'b) abtree*('a,'b) abtree | 
+                          btree of 'b*('b,'b) abtree*('b,'b) abtree;
 
 
 datatype ('a,'b, 'c) abctree = leaf | 
