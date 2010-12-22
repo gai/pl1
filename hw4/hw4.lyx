@@ -527,8 +527,224 @@ channels
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מתכנני השפה בחרו במנגנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+simultaneous assignments
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המאפשר לחלק הימני של ההשמה להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+tuple
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או רשימת איברים, משערך את כולו ואז משים את האיבר ה-
+\begin_inset Formula $n$
+\end_inset
+
+ לאיבר ה-
+\begin_inset Formula $n$
+\end_inset
+
+ ברשימת האיברים שמופיעה בצד השמאלי.
+ הדרישה היא שמספר האיברים בשני הצדדים )או - מספר האיברים ב-
+\lang english
+tuple
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שבצד ימין( יהיה זהה, והטיפוסים ה-
+\begin_inset Formula $n$
+\end_inset
+
+ים בשני הצדדים יתאימו )לכל 
+\begin_inset Formula $n$
+\end_inset
+
+(.
+ מנגנון זה מתיישב היטב עם תכונות ה-
+\lang english
+strong typing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שבשפה, מממש את היתרונות שבהשמה סימולטנית )למשל - החלפה בין משתנים ללא צורך
+ במשתנה עזר( והשימוש במזהה הריק )_( מאפשר להשתמש רק בחלק מהמשתנים שברשימה
+ מצד ימין מבלי לפגוע בדרישות התאמת מספר המשתנים והסדר בינהם.
+\end_layout
+
+\begin_layout Enumerate
+ניתן למשל לחשב סדרת פיבונאצ'י.
+ בדוגמא הבאה - קוד המחשב את מספרי פיבונאצ'י עד ל-
+\numeric on
+1000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+-
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+	first,sec := 0,1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+	for (sec < 1000) {
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+	  fmt.Println(first);
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+	  first, sec = sec, first+sec;
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+	}
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
