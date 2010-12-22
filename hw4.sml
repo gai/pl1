@@ -69,8 +69,24 @@
 		val a = Not(And(Not(Atom("true")),Atom("false")));
 		show(a); show(nnf(a));
 	
-	
-	
+	(*e.*)
+		fun distrib (p:prop, And(q:prop, r:prop)) = 
+						And(distrib(p,q),distrib(p,r)) |
+			distrib (And(q:prop, r:prop),p:prop) = 
+						And(distrib(q,p),distrib(r,p)) |
+			distrib (p:prop,q:prop) = Or(p,q);
+		(*examples*)
+		val p1 = Atom("p1"); val np1 = Not(p1);
+		val p2 = Atom("p2"); val np2 = Not(p2);
+		val p3 = Atom("p3"); val np3 = Not(p3);
+		val p4 = Atom("p4"); val np4 = Not(p4);
+		val a = And(Or(p1,Or(np2,p3)),And(Or(p1,p2),p4));
+		val b = And(And(p1,np2),And(Or(p1,Or(p2,Or(p3,p4))),Or(Or(np1,np2),Or(np3,np4))));
+		
+		show(a);
+		show(b);
+		show(distrib(a,b));
+			
 	
 	
 	
