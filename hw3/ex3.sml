@@ -1,5 +1,8 @@
-(* 065982415  036567055 *)
+(* 065982415 somriguy@t2 036567055 gai@tx *)
 
+fun sum f a [] = [] |
+	sum f a (x::xs) = f(a,x)::sum(f)(f(a,x))(xs);
+	
 (* question 2 *)
 local
 	(* actual tail recursion *)

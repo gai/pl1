@@ -1,6 +1,6 @@
 // 065982415 somriguy@t2		036567055 gai@tx
 {The main Idea of this code is to define the types of the step functions so	}
-{the Scan functions could recieve it as a paramter					}
+{the Sum functions could recieve it as a paramter					}
 program q1;
 
 uses Math, Sysutils;

@@ -1,4 +1,35 @@
-(* 065982415  036567055 *)
+(* 065982415 somriguy@t2 036567055 gai@tx *)
+
+fun sum f a [] = [] |
+	sum f a (x::xs) = f(a,x)::sum(f)(f(a,x))(xs);
+
+val intArray 	= [1,2,~3,4];
+val boolArray 	= [true,true,false,false];
+val stringArray = ["Shrik Shrik","Shrik Shrak","bool","La",""];
+val charArray		= [#"t", #"e", #"s", #"t"];
+
+
+(*sumIntToReal check*)
+fun add((x:real),(y:int)) = x+real(y);
+sum add 12.2 intArray;
+
+(*sumIntToBool check*)
+infix xor;
+fun a xor b = (a andalso (not b)) orelse (b andalso (not a));
+fun intToBool((x:bool),(y:int)) = x xor (y > 0);
+sum intToBool false intArray;
+
+(*sumBoolToInt check*)
+fun boolToInt (x:int, y:bool) = if (y) then x+1 else x-1;
+sum boolToInt 42 boolArray;
+
+(*sumStringToInt check*)
+fun addIntStr(num,str) = num+size(str);
+sum addIntStr 42 stringArray;
+
+(*sumCharToSting check*)
+fun addCharToString(x,y) = x^str(y);
+sum addCharToString "hey" charArray;
 
 (* question 2 *)
 local

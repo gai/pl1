@@ -119,10 +119,68 @@ R{גיא שקד}
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset space ~
-\end_inset
-
-
+הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+sum
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ממומשת ב-
+\lang english
+ML
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+באופן פשוט בהרבה מזה שהיה בפסקל )אז היינו צריכים ליצור פונקציה שונה לכל
+ זוג טיפוסים( או בג'אווה.
+ בקובץ הדוגמאות מובאות הדוגמאות מתרגיל הבית הראשון.
 \end_layout
 
 \begin_layout Enumerate
@@ -357,6 +415,61 @@ pivoting
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+במקרה זה הקוד המקבל את הרשימה ההפוכה אחראי לשחרר את הזכרון שלה.
+ ב-
+\lang english
+ML
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ קיים מנגנון 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+garbage collection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שאחראי לשחרור זכרון ברגע שזה אינו נגיש עוד.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset space ~
 \end_inset

@@ -96,8 +96,28 @@
 			cnf(Or(Not(p), q:prop)) = distrib(Not(p),cnf(q)) |
 			cnf(Or(p:prop, Not(q))) = distrib(cnf(p),Not(q)) |
 			cnf(Or(p:prop,q:prop)) = distrib(cnf(p),cnf(q));
-
-
-
-
 			
+  (*g.*)
+    local
+      local 
+        fun or_taut(Or(p,q), r) = or_taut(p,q) orelse or_taut(p,r) orelse or_taut(q,r)
+        |   or_taut(p, Or(q,r)) = or_taut(p,q) orelse or_taut(p,r) orelse or_taut(q,r)
+        |   or_taut(Atom(p), Not(Atom(q))) = (p = q)
+        |   or_taut(Not(Atom(p)), Atom(q)) = (p = q)
+        |   or_taut(p) = false; (* Atom, two Atoms, or Two Not(Atoms) *)
+      in 
+        fun cnf_taut(Atom p)    = false
+        |   cnf_taut(Not(p))    = false (* the input is CNF => p is an atom *)
+        |   cnf_taut(And(p,q))  = cnf_taut(p) andalso cnf_taut(q)
+        |   cnf_taut(Or(p,q))   = or_taut(p,q); 
+      end;
+    in
+      fun taut(p) = cnf_taut(cnf(nnf(p)));
+    end;
+    
+    taut(Atom("p1"));
+    taut(Or(Atom("p"),Atom("p")));
+    val a = Or(Atom("p"),Not(Atom("p")));
+    show(nnf(a));
+    taut(a);
+
