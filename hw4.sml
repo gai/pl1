@@ -74,7 +74,7 @@
 						And(distrib(p,q),distrib(p,r)) |
 			distrib (And(q:prop, r:prop),p:prop) = 
 						And(distrib(q,p),distrib(r,p)) |
-			distrib (p:prop,q:prop) = Or(p,q);
+			distrib (p:prop,q:prop) = And(p,q);
 		(*examples*)
 		val p1 = Atom("p1"); val np1 = Not(p1);
 		val p2 = Atom("p2"); val np2 = Not(p2);
@@ -88,11 +88,16 @@
 		show(distrib(a,b));
 			
 	(*f.*)
-		
-	
-	
-		
+		fun cnf(Atom p ) = Atom p |
+			cnf(Not(p)) = Not(p) |
+			cnf(And(Not(p),q:prop)) = And(Not(p),cnf(q)) |
+			cnf(And(p:prop,Not(q))) = And(cnf(p),Not(q)) |
+			cnf(And(p:prop,q:prop)) = And(cnf(p),cnf(q)) |
+			cnf(Or(Not(p), q:prop)) = distrib(Not(p),cnf(q)) |
+			cnf(Or(p:prop, Not(q))) = distrib(cnf(p),Not(q)) |
+			cnf(Or(p:prop,q:prop)) = distrib(cnf(p),cnf(q));
 
 
-	
 
+
+			
