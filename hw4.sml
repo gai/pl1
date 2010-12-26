@@ -87,7 +87,8 @@
 		show(b);
 		show(distrib(a,b));
 			
-	
+	(*f.*)
+		
 	
 	
 		
