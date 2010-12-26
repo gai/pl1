@@ -74,7 +74,7 @@
 						And(distrib(p,q),distrib(p,r)) |
 			distrib (And(q:prop, r:prop),p:prop) = 
 						And(distrib(q,p),distrib(r,p)) |
-			distrib (p:prop,q:prop) = And(p,q);
+			distrib (p:prop,q:prop) = Or(p,q);
 		(*examples*)
 		val p1 = Atom("p1"); val np1 = Not(p1);
 		val p2 = Atom("p2"); val np2 = Not(p2);
