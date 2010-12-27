@@ -4,7 +4,7 @@
 \begin_header
 \textclass heb-article
 \begin_preamble
-\usepackage{geometry}
+\usepackage{fullpage}
 \end_preamble
 \use_default_options true
 \language hebrew
@@ -22,7 +22,7 @@
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -131,6 +131,32 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+כל איבר מסוג 
+\lang english
+'a superList
+\lang hebrew
+ יכול להיות או מסוג 
+\lang english
+'a
+\lang hebrew
+ או מסוג 
+\lang english
+'a superList list
+\lang hebrew
+.
+ כך מתאפשר קינון של רשימות מכל עומק.
+\end_layout
+
+\begin_layout Enumerate
+השתמשנו בפונקציית עזר אשר מקבלת סופר רשימה ומספר רמה ולכל אטום ברשימה אותה
+ קיבלה מחזירה צמד של האיבר ומספר הרמה.
+ במידה וקיימת רשימת על נוספת מקוננת, תיקרא פונקציית העזר בשנית עם מספר רמה
+ גדול באחד.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -144,6 +170,79 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+הטיפוס 
+\lang english
+abtree
+\lang hebrew
+ מכיל איבר ראש ושני בנים.
+ אם איבר הראש הינו מסוג 
+\lang english
+'a
+\lang hebrew
+ אזי גם שני הבנים יכולים להיות בעלי איבר ראש שכזה ולכן גם הבנים יהיו מאותו
+ הטיפוס.
+ אך במידה ואיבר הראש הינו מסוג 
+\lang english
+'b
+\lang hebrew
+ אזי גם בניו מאולצים להיות מסוג 
+\lang english
+'b
+\lang hebrew
+ בלבד על ידי הגדרתם להיות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+('b,'b) abtree
+\lang hebrew
+.
+ בנוסף, עלי העץ בכל מקרה הינם האיבר 
+\lang english
+unit
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+בדומה מאוד לסעיף הקודם מוגדר גם 
+\lang english
+abctree
+\lang hebrew
+ רק שהפעם האילוץ לגבי הבנים הינו הדרגתי - קיימים שלושה סוגי עצים: אלו המכילים
+ את שלושת הטיפוסים, אלו המכילים את 
+\lang english
+'b
+\lang hebrew
+ i-
+\lang english
+'c
+\lang hebrew
+ ואלו המכילים רק את 
+\lang english
+'c
+\lang hebrew
+.
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -157,6 +256,173 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+הפונקציה מקבלת שני פסוקים 
+\lang english
+a,b
+\lang hebrew
+ ומחזירה את הפסוק 
+\lang english
+
+\begin_inset Formula $\neg a|b$
+\end_inset
+
+
+\lang hebrew
+ השקול לוגית לפסוק 
+\lang english
+
+\begin_inset Formula $a\to b$
+\end_inset
+
+
+\lang hebrew
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת שני פסוקים 
+\lang english
+a,b
+\lang hebrew
+ ומחזירה את הפסוק 
+\begin_inset Formula $\left(a\wedge\neg b\right)\vee\left(\neg a\wedge b\right)$
+\end_inset
+
+השקול ל 
+\lang english
+a XOR b
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת פסוק 
+\lang english
+a
+\lang hebrew
+ ומדפיסה אותו לקונסולה בצורת 
+\lang english
+string
+\lang hebrew
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת פסוק 
+\lang english
+a
+\lang hebrew
+ ומחזירה את צורת ה-
+\lang english
+NNF
+\lang hebrew
+ שלו לפי הכללים המוגדרים בשאלה.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת שני פסוקים בצורת 
+\lang english
+CNF
+\lang hebrew
+ ומחזירה פסוק 
+\lang english
+CNF
+\lang hebrew
+ השקול לביטוי 
+\lang english
+
+\begin_inset Formula $a\vee b$
+\end_inset
+
+
+\lang hebrew
+.
+ צעדי השכתוב הינם כמוגדר בשאלה.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת פסוק בצורת 
+\lang english
+NNF
+\lang hebrew
+ ומחזירה פסוק שקול לו בצורת 
+\lang english
+CNF
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה מקבלת פסוק ובודקת האם הוא טאוטולוגיה ע"י האלגוריתם הבא: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+העברת הפסוק לצורת 
+\lang english
+NNF
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+העברת הפסוק לצורת 
+\lang english
+CNF
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+חלוקת הפסוק לפסוקים המכילים רק 
+\lang english
+Or
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)החלקים בין אופרטורי ה-
+\lang english
+AND
+\lang hebrew
+ בפסוק 
+\lang english
+CNF
+\lang hebrew
+ מכילים רק אופרטורי 
+\lang english
+Or
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Enumerate
+בדיקה האם כל החלקים הנ"ל מכילים כל אחד איזה שהוא אטום ושלילתו וזאת ע"י יצירה
+ של כל הזוגות האפשריים של הליטרלים המופיעים בפסוקית.
+ במידה וכן - נחזיר "אמת".
+ במידה וקיים אפילו חלק אחד כזה שאינו טאותולוגיה - נחזיר "שקר".
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 אין דמיון רב בין
 \family roman
