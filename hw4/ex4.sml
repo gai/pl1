@@ -1,3 +1,5 @@
+(* 065982415 somriguy@t2 036567055 gai@tx *)
+
 (*1.*)
 	(*a.*)
 		datatype 'a superList = 
@@ -16,13 +18,13 @@
 (*2.*)
 	(*a.*)
 		datatype ('a,'b) abtree = 
-							lf |
+							ab_lf |
 							ab_a of 'a*('a,'b) abtree*('a,'b) abtree |
 							ab_b of 'b*('b,'b) abtree*('b,'b) abtree;
 							
 	(*b.*)
 		datatype ('a,'b,'c) abctree = 
-							lf |
+							abc_qlf |
 							abc_a of 'a*('a,'b,'c) abctree*('a,'b,'c) abctree |
 							abc_b of 'b*('b,'b,'c) abctree*('b,'b,'c) abctree |
 							abc_c of 'c*('c,'c,'c) abctree*('c,'c,'c) abctree;
