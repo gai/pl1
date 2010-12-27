@@ -40,8 +40,8 @@
 		fun xor (a:prop, b:prop) = Or(And(Not a,b) ,And(a,Not b));
 	(*c.*)
 		fun show (Atom a) = a |
-			show (And(a:prop, b:prop)) = "("^show(a)^"&"^show(b)^")" |
-			show (Or(a:prop, b:prop)) = "("^show(a)^"|"^show(b)^")" |
+			show (And(a:prop, b:prop)) = "("^show(a)^" & "^show(b)^")" |
+			show (Or(a:prop, b:prop)) = "("^show(a)^" | "^show(b)^")" |
 			show (Not(a:prop)) = "(~"^show(a)^")";
 	(*d.*)
 		local 
