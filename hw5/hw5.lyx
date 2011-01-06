@@ -1,0 +1,274 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+שפות תכנות - ש.ב.
+
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+עמרי גיא 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 065982415
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+R{גיא שקד}
+\backslash
+
+\backslash
+036567055
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ביטוי העונה על הדרישות יהיה למשל - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+MySeries(
+\begin_inset Quotes eld
+\end_inset
+
+fibonachi
+\begin_inset Quotes erd
+\end_inset
+
+, 0, 0+1, 1+1, 1+2, 2+3, 8, 13, 21, 34, 55, 89, 144);
+\end_layout
+
+\begin_layout Standard
+והעץ הסינטקטי המתאים - 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename q5.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הגדרנו את הפונקציה הבאה - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, 
+\series bold
+double
+\series default
+ a0, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int
+ a9, int a10, int a11, int a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, 
+\series bold
+double
+\series default
+ a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int
+ a10, int a11, int a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, int a1, int a2, 
+\series bold
+double
+\series default
+ a3, int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int
+ a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, int a1, int a2, int a3, 
+\series bold
+double
+\series default
+ a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12)
+ { return; } 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
