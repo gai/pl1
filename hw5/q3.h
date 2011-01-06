@@ -67,6 +67,6 @@ Number& DoubleClass::addInt(IntClass& x) {
 //return a DoubleClass object that's the result of x+this.
 //This should work if x is either IntClass or DoubleClass
 Number& DoubleClass::operator+( Number& x) {
-  return x.addInt(*this);
+  return x.addDouble(*this);
 }
 
