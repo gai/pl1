@@ -1,3 +1,5 @@
+(*Q1*)
+
 datatype 'a seq = Nil | Cons of 'a *(unit -> 'a seq);
 
 exception EmptySeq;
@@ -27,3 +29,16 @@ filterq_n (fn x => x mod 2=0) 3  (uptoSeq 1 2);
 seqToList 10 it;
 filterq_n (fn x => x mod 2=0) 8  (uptoSeq 1 10);
 seqToList 10 it;
+
+
+(*Q2*)
+(*a*)
+	
+fun truncSeq Nil n 	= 	Nil |
+	truncSeq a n 	= 	if (n<=0) then raise EmptySeq
+						else Cons((head(a)),fn()=>(truncSeq (tail(a)) (n-1) )); 
+						
+(* examples *)
+truncSeq (listToSeq[1,2,3,4,5]) 2;
+tail it;
+tail it;
