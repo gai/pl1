@@ -1,3 +1,4 @@
+(* 065982415 somriguy@t2 036567055 gai@tx *)
 datatype 'a seq = Nil | Cons of 'a *(unit -> 'a seq);
 
 exception EmptySeq;
@@ -31,13 +32,6 @@ fun filterq_n f n Nil = Nil |
 								Cons((head(a)),fn()=>(filterq_n f(n-1)(tail(a))))
 							else 
 							 	filterq_n f n (tail(a));
-(* examples *)
-filterq_n (fn x => x mod 2=0) 3  (uptoSeq 1 10);
-seqToList 10 it;
-filterq_n (fn x => x mod 2=0) 3  (uptoSeq 1 2);
-seqToList 10 it;
-filterq_n (fn x => x mod 2=0) 8  (uptoSeq 1 10);
-seqToList 10 it;
 
 (* ************************************************************************** *)
 (*Q2*)
@@ -50,17 +44,6 @@ seqToList 10 it;
 fun truncSeq Nil n 	= 	Nil |
 	truncSeq a n 	= 	if (n<=0) then raise EmptySeq
 						else Cons((head(a)),fn()=>(truncSeq (tail(a)) (n-1) )); 			
-(* examples *)
-(* should return Nil *)
-truncSeq Nil 8;
-(* should raise EmptySeq *)
-truncSeq (listToSeq[1,2,3,4,5]) (0);
-(* should return only the first two elements *)
-truncSeq (listToSeq[1,2,3,4,5]) 2;
-tail it;
-tail it;
-(* should raise EmptySeq *)
-tail it;
 
 (*Q2*)
 (*b*)
@@ -82,11 +65,4 @@ in
 	fun restartOnError Nil 	= Nil |
 		restartOnError a	= restartOnErrorHelp a a
 end;
-(* examples *)
-(* should return Nil *)
-restartOnError Nil;
-(* should return a "cyclic" seq	*)
-restartOnError (truncSeq (listToSeq[1,2,3,4,5]) 2);
-tail it;
-tail it;
-tail it;
+
