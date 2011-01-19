@@ -1,10 +1,13 @@
 #include "cpu_add.h"
 #include "poly_subtype.h"
 
+// Assuming the only polymorphism is coersion from double to int and vice versa 
 double add_coercion(double a, double b) {
   return add_double_double(a, b);
 }
 
+
+// 4 overloaded functions, assuming function overloadint is the only polymorphism
 int add_overload(int a, int b) {
   return add_int_int(a, b);
 }
@@ -22,11 +25,13 @@ double add_overload(double a, double b) {
 }
 
 
+// template add function, assuming one can static_cast from A,B to double
 template <class A, class B, class RET>
 RET add_parametric(A a, B b) {
   return static_cast<RET>(add_double_double(static_cast<double>(a), static_cast<double>(b)));
 }
 
+// if A,B are both int, we want to use add_int_int -
 template <>
 int add_parametric<int, int, int>(int a, int b) {
   return add_int_int(a, b);

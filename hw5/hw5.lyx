@@ -1,0 +1,3091 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+שפות תכנות - ש.ב.
+
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+עמרי גיא 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 065982415
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+R{גיא שקד}
+\backslash
+
+\backslash
+036567055
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+coercion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אוטומטי מ-
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל-
+\lang english
+double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ולהפך נכתוב פונקציה שמקבלת שני משתנים מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ומחזירה משתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+double
+\lang hebrew
+.
+ היא תחבר כהלכה שני משתנים מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)באופן טרוויאלי(, ה-
+\lang english
+coercion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+האוטומטי ידאג להמיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל-
+\lang english
+double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+במידת הצורך.
+ ואם נחבר שני משתנים מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נקבל אמנם משתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+double
+\lang hebrew
+, אך ה-
+\lang english
+coercion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+האוטומטי יאפשר את ההשמה בחזרה למשתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+והתוצאה תהיה מדוייקת )עד כדי מגבלות הייצוג של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שבכל מקרה תקפות במקרה זה(.
+\end_layout
+
+\begin_layout Enumerate
+אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+overloading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ואין אף סוג פולימורפיזם אחר, נממש ארבע פונקציות פולימורפיות בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+add_overload
+\lang hebrew
+, אחת לכל צירוף אפשרי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int, double
+\lang hebrew
+.
+ כאשר כל אחת מהפונקציות תקרא לפונקציה הנתונה המתאימה )עם היפוך סדר המשתנים,
+ בהתאם לצורך(.
+ ותחזיר משתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לכל צירוף פרט ל-
+\lang english
+int, int
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+נכתוב פונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+template
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שמבצעת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+casting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+של שני המשתנים שלה ל-
+\lang english
+double
+\lang hebrew
+, מבצעת חיבור שלהם, ומחזירה את הפלט של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+add_double_double
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ עליהם.
+ כדי לטפל באופן פרטני בזוג משתנים מסוג 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נשתמש ב-
+\lang english
+template specialization
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+השלמנו את המחלקות המבוקשות.
+ כאשר נדרשנו לממש את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+addInt
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+addDouble
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+השתמשנו בפונקציה הנתונה המתאימה )
+\lang english
+add_int_double
+\lang hebrew
+, למשל(.
+ כדי לממש את האופרטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
++
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ קראנו ל-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+addInt
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ כאשר 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+LHS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או ל-
+\lang english
+addDouble
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+LHS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Double
+\lang hebrew
+( כדי לוודא שאכן תקרא הפונקציה המתאימה לחיבור.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נסווג את מערכת הטיפוסים ב-
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על פי הקריטריונים שנלמדו בהרצאה - 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+קיום - בשפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיימת מערכת טיפוסים למשתנים.
+ קבועים יכולים להיות במעמד ביניים ולהתנהג כטיפוסים שונים בהתאם לשימוש בהם.
+\end_layout
+
+\begin_layout Enumerate
+שקילות טיפוסים - ראינו בפירוט בתרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+שני טיפוסים פרמיטיביים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+T1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו-
+\lang english
+T2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב-
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יהיו שקולים אם הם ההכרזה )
+\lang english
+decleration
+\lang hebrew
+( עליהם זהה, בפרט אם יש להם אותו טיפוס )פרמיטיבי(.
+ חריגים הם טיפוסים פרמיטיביים שהם שני שמות שונים )
+\lang english
+alias
+\lang hebrew
+( לאותו הטיפוס.
+ למשל -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+uint8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו-
+\lang english
+byte
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הם למעשה אותו טיפוס ולכן שקולים.
+\end_layout
+
+\begin_layout Plain Layout
+שני טיפוסים שאינם פרמיטיביים יהיו שקולים אם הם בנויים מאותו סט של משתנים
+ פרמיטיביים.
+ בפרט - 
+\end_layout
+
+\begin_layout Itemize
+פונקציות הן שקולות אם הן מקבלות את אותו מספר משתנים, מטיפוסים שקולים, ומחזירות
+ משתנה מטיפוס שקול.
+\end_layout
+
+\begin_layout Itemize
+מערכים הם שקולים אם טיפוס הבסיס שלהם שקול ומספר האיברים בהם זהה.
+\end_layout
+
+\begin_layout Itemize
+טיפוסי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+slice
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הם זהים אם טיפוס הבסיס שלהם זהה )אך ללא תלות במספר האיברים(.
+\end_layout
+
+\begin_layout Itemize
+מבנים )
+\lang english
+struct
+\lang hebrew
+( זהים אם הם מכילים את אותם שדות )בעלי אותו טיפוס, שם וסדר(.
+ שדות חסרי שם נחשבים זהים.
+\end_layout
+
+\begin_layout Itemize
+מצביעים לטיפוסים שקולים הם שקולים.
+\end_layout
+
+\begin_layout Itemize
+שני ממשקים יהיו שקולים אם הם מכילים את אותו סט של מתודות עם שמות זהים והכרזות
+ על פונקציות שקולות, סדר ההכרזה )על פונקציות שונות( לא משנה.
+\end_layout
+
+\begin_layout Itemize
+שני מערכים אסוציאטיביים )
+\lang english
+map
+\lang hebrew
+( שקולים אם יש להם טיפוסים שקולים בתור מפתח וערך )
+\lang english
+key, value
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Itemize
+שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+channels
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יחשבו שקולים אם יש להם אותו טיפוס ערך )
+\lang english
+value
+\lang hebrew
+( ואותו כיוון.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+"חוזק" - כפי שראינו בהרצאה, שפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+strongly typed
+\end_layout
+
+\begin_layout Enumerate
+זמן האכיפה - האכיפה ב-
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מתבצעת רובה ככולה בזמן קומפילציה, משמע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+static typing
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+אחריות התיוג ב-
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא על המתכנת או על הקומפיילר.
+ בשפה קיים מנגנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Implicit typing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שמאפשר לקומפיילר לזהות את הטיפוס באופ עצמאי במקרים רבים, ויש תחביר מתאים
+ בשפה להגדרת טיפוסים של המתכנת.
+\end_layout
+
+\begin_layout Enumerate
+גמישות - כפי שראינו בתרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+, הטיפוסים )כאשר מוגדרים( אינם גמישים.
+ כלומר -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+inflexible
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+בשפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+coersion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אוטומטי כלל בין טיפוסים שונים של משתנים.
+ כפי שכבר ציינו - כאשר לא מוגדר טיפוס הקומפיילר ינסה לבחור את הטיפוס שיאפשר
+ את כל הפעולות המופיעות בקוד, אך אין מדובר ב-
+\lang english
+coersion
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+בשפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לא קיימת העמסה של פונקציות בעלות אותו שם )
+\lang english
+function overloading
+\lang hebrew
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+קיימת העמסת אופרטורים )
+\lang english
+operator overloading
+\lang hebrew
+( לטיפוסים המוגדרים בשפה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לא ניתן לחשב ב-
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חיבור של משתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עם משתנה מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+float
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ מבלי לבצע המרה מפורשת של אחד מהם לטיפוס של השני )נסיון לבצע חיבור כזה יגרום
+ לשגיאה(.
+ אם המתכנת ביצע המרה מפורשת כזו - החיבור יתבצע כמו כל חיבור של שני ערכים
+ מאותו טיפוס.
+\end_layout
+
+\begin_layout Enumerate
+ליטרלים הם חסרי טיפוס )"חזק"(, כאשר מבוצע חיבור של ליטרלים כאשר ליטרל אחד
+ "נראה כמו"
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+int
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+והשני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+float
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יתבצע החיבור כמו חיבור של משתנים מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+float
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+בשפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+go
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיימים סוגי ה-
+\lang english
+sequencers
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הבאים - 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+פקודות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+goto
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- המאפשרות לקפוץ לביצוע ה-
+\lang english
+label
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המבוקש
+\end_layout
+
+\begin_layout Enumerate
+פקודות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+break
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- המאפשרות לגדוע ביצוע בלוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+for, switch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+select
+\lang hebrew
+.
+ כמו כן קיימת פקודת 
+\lang english
+fallthrough
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המציינת במפורש מעבר ל-
+\lang english
+case
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הבא במקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+switch
+\end_layout
+
+\begin_layout Enumerate
+חריגות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+panic
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו-
+\lang english
+recover
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מממשות מנגנון חריגות לטיפות בשגיאות בזמן ריצה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ביטוי העונה על הדרישות יהיה למשל - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+MySeries(
+\begin_inset Quotes eld
+\end_inset
+
+fibonachi
+\begin_inset Quotes erd
+\end_inset
+
+, 0, 0+1, 1+1, 1+2, 2+3, 8, 13, 21, 34, 55, 89, 144);
+\end_layout
+
+\begin_layout Standard
+והעץ הסינטקטי המתאים - 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename q5.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הגדרנו את הפונקציה הבאה - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, 
+\series bold
+double
+\series default
+ a0, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int
+ a9, int a10, int a11, int a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, 
+\series bold
+double
+\series default
+ a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9, int
+ a10, int a11, int a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, int a1, int a2, int a3, int a4, int a5,
+ int a6, int a7, 
+\series bold
+double
+\series default
+ a8, int a9, int a10, int a11, int a12) { return; }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+void MySeries(char* name, int a0, int a1, int a2, int a3, int a4, int a5,
+ int a6, int a7, int a8, 
+\series bold
+double
+\series default
+ a9, int a10, int a11, int a12) { return; } 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ב-
+\lang english
+ADA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ מנגנון ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+overloading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מאפשר העמסה הן על פי מספר וטיפוס המשנתים שהפונקציה מקבלת והן על פי טיפוס
+ ההחזרה של הפונקציה.
+ במקרה שלנו השגיאה לא הייתה נעלמת.
+ כדי להעלים אותה היה עלינו להגדיר בנוסף, למשל - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+double operator+(int a, int b) { return 3.14; } 
+\end_layout
+
+\begin_layout Standard
+אז הקונפליקט היה נפתר ע"י שימוש בפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+MySeries
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+השנייה שהוגדרה והאופרטור + החדש )שלא שומר על הסמנטיקה של אופרטור החיבור,
+ אבל מספיק לצורך הדוגמא שבשאלה(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מנגנון ה-
+\lang english
+template specialization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב-
+\lang english
+C++
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אד-הוק.
+ על המתכנת להגדיר באופן ידני את ה-
+\lang english
+specialization
+\lang hebrew
+, הוא מוגבל רק לטיפוסים שהוגדרו באופן ידני )או חצי ידני, אם עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+specialization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+רק לחלק מה-
+\lang english
+template typenames
+\lang hebrew
+( ולא מבוסס על מכנה משותף כלשהו בין הטיפוסים עליהם מתבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+specialization
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+מבין ארבעת סוגי הפולימורפיזם שנלמדו בכתה המנגנון הדומה ביות ל-
+\lang english
+template specialization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ מבחינת תכונות הפולימורפיזם הוא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+overloading
+\lang hebrew
+.
+ הוא לא תואם בדיוק ל-
+\lang english
+overloading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כיוון שבמקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+template specialization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ניתן לבחור בכל שם ואנו לא מוגבלים רק למספר קטן של שמות )אופרטורים( שהוגדרו
+ בשפה.
+\end_layout
+
+\begin_layout Enumerate
+לא ניתן לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+overloading
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+templates
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב-
+\lang english
+C++
+\lang hebrew
+.
+ כתבנו את הקודם הבא המנסה לעשות זאת - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename /home/gai/school/PL/pl1/hw5/pasted1.png
+	scale 75
+	groupId code
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקיבלנו את הודעת השגיאה - 
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename /home/gai/school/PL/pl1/hw5/pasted2.png
+	scale 75
+	groupId code
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)הודעת השגיאה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+g++
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שקולה, אך פחות בהירה(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מנגנון הפונקציות עם פרמטרי ברירת מחדל הוא מנגנון פולימורפי כיוון שהוא מאפשר
+ פונקציות עם סט טיפוסים שונה באותו השם.
+ למשל פונקציה שההרכזה עליה היא - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+int pow(int base, int exp=2);
+\end_layout
+
+\begin_layout Standard
+מחשבת ריבוע של משפר שלם אם ניתן לה משתנה אחד, או מחשבת חזקה )שלמה( של מספר
+ שלם אם ניתנים לה שני משתנים.
+ באופן שקול אפשר היה להכריז על שתי פונקציות שונות בעלות אותו שם ומספר שונה
+ של פרמטרים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+המנגנון מתאים לפולימורפיזם אוניברסלי - יש בסיס משותף חזק לכל הצורות השונות
+ של הפונקציה.
+ למעשה - כל הפונקציות מבצעות את אותה הפעולה בדיוק, כאשר ככל שמשמיטים פרמטרים
+ )בעלי ערך ברירת מחדל( מקבלים מקרה פרטי יותר )של המקרה הכללי המתקבל כאשר
+ מעברים לפונק' את כל הפרמטרים(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מצד שני, המנגנון מתאים גם לפולימורפיזם אד-הוק - מספר הצורות מוגבל ומיוצר
+ באופן )חצי( ידני על ידי המתכנת )האופן שבו הוא בוחר לסדר את הפרמטרים המועברים
+ לפונק'(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,43 @@
+digraph G {
+  node [shape = ellipse];
+    printf [label="MySeries"]
+    txt [label="\"fibbonachi\""]
+    zero [label="0"]
+    a [label="+"]
+    a0 [label="0"]
+    a1 [label="1"]
+    b [label="+"]
+    b0 [label="1"]
+    b1 [label="1"]
+    c [label="+"]
+    c0 [label="1"]
+    c1 [label="2"]
+    d [label="+"]
+    d0 [label="2"]
+    d1 [label="3"]
+    e [label="8"]
+    f [label="13"]
+    g [label="21"]
+    h [label="34"]
+    i [label="55"]
+    j [label="89"]
+    k [label="144"]
+    
+  printf -> txt 
+  printf -> zero
+  printf -> a -> a0
+  printf -> b -> b0
+  printf -> c -> c0
+  printf -> d -> d0
+  printf -> e
+  printf -> f
+  printf -> g
+  printf -> h
+  printf -> i
+  printf -> j
+  printf -> k
+   a->a1
+   b->b1
+   c->c1
+   d->d1
+}
