@@ -1,0 +1,436 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+שפות תכנות - ש.ב.
+
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Author
+עמרי גיא 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 065982415
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+R{גיא שקד}
+\backslash
+
+\backslash
+036567055
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פרולוג כללי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mbox{-point\left(A,B\right)=point\left(X,Y,Z\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאן 
+\begin_inset Formula $S,T$
+\end_inset
+
+ הם שמות עצם מורכבים ו-
+\begin_inset Formula $n\ne m$
+\end_inset
+
+, לכן פרולוג לא מספק את המטרה הזו
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mbox{-date\left(D,M,1983\right)=date\left(D1,may,Y1\right),date\left(D,M,1983\right)=date\left(15,M,Y\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פרולוג מספק את המטרה הזו -
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{date\left(D,M,1983\right)=date\left(D1,may,Y1\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאן 
+\begin_inset Formula $S,T$
+\end_inset
+
+ הם שמות עצם מורכבים, יש להם אותו 
+\begin_inset Formula $functor$
+\end_inset
+
+ ראשי ו-
+\begin_inset Formula $m=n$
+\end_inset
+
+ לכן פרולוג מבצע את ההתאמה - 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D=D1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M=may$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y1=1983$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mbox{date\left(D,M,1983\right)=date\left(15,M,Y\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאן 
+\begin_inset Formula $S,T$
+\end_inset
+
+ הם שמות עצם מורכבים, יש להם אותו 
+\begin_inset Formula $functor$
+\end_inset
+
+ ראשי ו-
+\begin_inset Formula $m=n$
+\end_inset
+
+ לכן פרולוג מבצע את ההתאמה - 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D=15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y=1983$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובסך הכל המטרה מסופקת ו-
+\begin_inset Formula $D=15,D1=15,M=may,Y=1983,Y1=1983$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+כאשר האלגוריתם המוצג בשאלה מנסה להתמודד עם - 
+\begin_inset Formula $\mbox{-g\left(X,f\left(X\right)\right)=g\left(f\left(X\right),X\right)}$
+\end_inset
+
+הוא מנסה לבצע את ההצבה - 
+\begin_inset Formula \[
+X=f\left(X\right)\]
+
+\end_inset
+
+ולכן מנסה לבצע את ההצבה - 
+\begin_inset Formula $X=f\left(f\left(X\right)\right)$
+\end_inset
+
+, וכך הלאה - 
+\begin_inset Formula $X=f\left(f\left(\dots f\left(X\right)\right)\right)$
+\end_inset
+
+ עד לאינסוף.
+ ההצבות לא יעצרו לעולם )אלא באופן מלאכותי, על ידי חריגה ממחסנית הרקורסיה
+ למשל( ולכן פרולוג לא יוכל לספק את המטרה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאשר מציבים מטרה זו בפרולוג מקבלים - 
+\begin_inset Formula \[
+\mbox{X = f(**).}\]
+
+\end_inset
+
+כאשר המשמעות היא שפרולוג זיהה את ההפניה המעגלית.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+חתכים
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+cuts
+\end_layout
+
+\begin_layout Enumerate
+ה-
+\lang english
+cut
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+red cut
+\lang hebrew
+, הוא משפיע על המשמעות של 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ למשל - ללא ה-
+\lang english
+cut
+\lang hebrew
+ המטרה 
+\begin_inset Formula $\mbox{-p\left(X\right),X>2}$
+\end_inset
+
+ תתקבל )פרולוג ינסה את 
+\begin_inset Formula $p\left(1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $p\left(2\right)$
+\end_inset
+
+, ויצליח ב-
+\begin_inset Formula $p\left(3\right)$
+\end_inset
+
+(.
+ אבל כאשר ה-
+\lang english
+cut
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיים המטרה לא תתקבל )פרולוק ינסה את 
+\begin_inset Formula $p\left(1\right)$
+\end_inset
+
+, אחריו את 
+\begin_inset Formula $p\left(2\right)$
+\end_inset
+
+ - ואז יעצור וידחה(.
+\end_layout
+
+\begin_layout Section*
+רשימות
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
