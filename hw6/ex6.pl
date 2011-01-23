@@ -1,17 +1,67 @@
+/* 
+  an empty list is a list, and  also a list with at least one element
+*/
 list([]).
 list([_|_]).
 
-insert(X, [], [X]).
-insert(X, [Y|L1], [Y|L2]):-X>=Y,insert(X,L1,L2).
-insert(X, [Y|L1], [X|L2]):-Y>=X,[Y|L1]=L2.
+/* examples - 
+list([]). 
+list([1]).
+list(1).
+list([1,2,3,[a,b],c]).
+ */
 
-insertsort([], []).
-insertsort([X], [X]).
-insertsort([X|Y], Z) :- (insertsort(Y,PART), insert(X, PART, Z)).
+/* 
+  insert an element into an empty list generates one-element list
+  insert X into a sortedlist starting with Y <= X is equivalent to adding X to the tail of 
+  the sorted list
+  insert X into sorted list starting with Y > X is equivalent to adding X at the begining  
+*/
+insert(X, [], [X]) :- !.
+insert(X, [Y|L1], [Y|L2]) :- (X>=Y, !, insert(X,L1,L2)).
+insert(X, [Y|L1], [X|L2]) :- (Y>X, !, [Y|L1]=L2).
 
-swap([X,Y], [Y,X]) :- Y<X.
+/* examples - 
+  insert(1, [], X).
+  insert(1, [2,3], X).
+  insert(1, [-1, 0], X).
+  insert(1, [-1, 3, 6, 7, 22], X).
+  insert(1, [2,3], [1,2,3]).
+  insert(1, [2, 3], [2,3,1]).
+  insert(X, [1,2], [0,1,2]).
+*/
+
+/* 
+  an empty or one element list is sorted
+  in case of a longer list - we call the predicate recursively on the tail, and add the head to it's
+  place using "insert".
+*/
+insertsort([], []) :- !.
+insertsort([X], [X]) :- !.
+insertsort([X|Y], Z) :- (insertsort(Y,PART), ! ,insert(X, PART, Z)).
+
+/* examples 
+  
+  insertsort([3,2,1], [1,2,3]).
+  insertsort([3,1,2], [1,2,3]).
+  insertsort([1,2,1,1,3], [1,1,1,2,3]).
+  insertsort([], X).
+  insertsort([4,1,5,5,55], X).
+  insertsort([1,2,3], X).
+  insertsort([X, 7, 2, 3], [1,2,3,7]).
+
+*/
+
+/*
+  swaps the first non sorted elements in a list
+  a list of two elements is trivial, a longer list - if both heads the same and less than the next
+  element (in the first list) - swap the tails. otherwise - swap the first two elements and make 
+  sure tails agree 
+*/
+swap([X,Y], [Y,X]) :- (!, Y<X).
+swap([X|T1], [X|T2]) :- (T1=[Y1|_], !, Y1>=X, !, swap(T1, T2)).
 swap([X|T1], [Y|T2]) :- (T1=[Y|T], T2=[X|T], Y<X).
-swap([X|T1], [X|T2]) :- (T1=[Y1|_], Y1>=X, swap(T1, T2)).
+
 
 bubblesort([], []).
 bubblesort([X], [X]).
