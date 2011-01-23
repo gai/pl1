@@ -413,7 +413,7 @@ cut
 \bar default
 \noun default
 \color inherit
-קיים המטרה לא תתקבל )פרולוק ינסה את 
+קיים המטרה לא תתקבל )פרולוג ינסה את 
 \begin_inset Formula $p\left(1\right)$
 \end_inset
 
@@ -428,8 +428,8 @@ cut
 רשימות
 \end_layout
 
-\begin_layout Standard
-
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
 \end_layout
 
 \end_body
