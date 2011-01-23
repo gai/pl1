@@ -424,12 +424,471 @@ cut
  - ואז יעצור וידחה(.
 \end_layout
 
+\begin_layout Enumerate
+בתהליך החישוב של השאילתה מנסה פרולוג למצוא הצבה שתספק את 
+\lang english
+X
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)נמצא אחד שכזה - 
+\lang english
+X=1
+\lang hebrew
+(.
+ לאחר מכן משמעות סימן הקריאה הינו שמעתה ערכו של 
+\lang english
+X
+\lang hebrew
+ לא ישתנה )לא יבוצע 
+\lang english
+backtracking
+\lang hebrew
+ מנקודה זאת( ולאחר מכן מנסה פרולוג למצוא הצבה שתספק את 
+\lang english
+Y
+\lang hebrew
+ וכמובן שגם כזאת נמצאת 
+\lang english
+Y=1
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+ה-
+\lang english
+CUT
+\lang hebrew
+ בתכנית מספר אחת הינו 
+\lang english
+GREEN CUT
+\lang hebrew
+ מכיון שהחוקים הינם זרים זה לזה ולכן אם מתקיים ש-
+\lang english
+X
+\lang hebrew
+ קטן משלוש התנאי השני ממילא לא מתקיים ולכן אין משמעות לכך שלא נאפשר את בדיקת
+ התנאי השני.
+ לעומת זאת, בתכנית השנייה החוקים אינם זרים, ולכן גם אם מתקיים ש-
+\lang english
+X
+\lang hebrew
+ קטן משלוש יכולה להיות השמה שתספק את התוכנית בהתאם לחוק השני בלבד אך זה
+ כלל אינו נבדק ברגע שמתקיים כי 
+\lang english
+X
+\lang hebrew
+ קטן משלוש, לכן ה-
+\lang english
+CUT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RED CUT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)למשל עבור, 
+\begin_inset Formula $p(2,7)$
+\end_inset
+
+ - ללא החתך הפרדיקט יסתפק, אך בניסוח הנוכחי לא(.
+\end_layout
+
 \begin_layout Section*
 רשימות
 \end_layout
 
 \begin_layout Enumerate
 מימשנו את הפרדיקט 
+\begin_inset Formula $list$
+\end_inset
+
+ המסתפק עבור רשימה ריקה או עבור רשימה שמכילה איבר 
+\begin_inset Formula $head$
+\end_inset
+
+ כלשהו ו-
+\begin_inset Formula $tail$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
+\begin_inset Formula $insert$
+\end_inset
+
+ המסתפק עבור הוספה של איבר בודד לרשימה ריקה.
+ אם הרשימה אליה מנסים להוסיף את האיבר אינר ריקה - הפרדיקט יסתפק -
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם ראש הרשימה קטן המאיבר - אם הפרדיקט מסתפק כאשר מנסים להוסיף את אותו איבר
+ לזנב הרשימה.
+\end_layout
+
+\begin_layout Enumerate
+אם ראש הרשימה אינו קטן מהאיבר - אם רשימת התוצאה זהה לשרשור של האיבר החדש
+ בתחילת הרשימה הקיימת.
+\end_layout
+
+\begin_layout Standard
+מימשנו את הפרדיקט 
+\begin_inset Formula $insertsort$
+\end_inset
+
+ המשתמש ב-
+\begin_inset Formula $insert$
+\end_inset
+
+ על לקבוע האם רשימה אחת מתקבלת מאחרת על ידי מיון.
+ המיון מתבצע בשיטת 
+\begin_inset Formula $insert\ sort$
+\end_inset
+
+ על ידי קריאה רקורסיבית לפרדיקט והכנסת איבר איבר לרשימה הממויינת המתקבלת
+ באמצעות הפרדיקט 
+\begin_inset Formula $insert$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
+\begin_inset Formula $swap$
+\end_inset
+
+ המסתפק אמ"מ הרשימה השניה שניתנה לו מתקבלת מהראשונה על ידי החלפת זוג האיברים
+ הראשונים שאינם ממויינים.
+ הפרדיקט טרוויאלי עבור רשימות בנות שני איברים, עבור רשימות בנות שלושה איברים
+ או יותר - הפרדיקט בודק האם האיברים הראשונים זהים בשתי הרשימות, במקרה כזה
+ - אם האיבר הבא ברשימת הקלט גדול או שווה לאיבר הראשון - הפרדיקט נקרא רקורסיבית
+ על זנבות הרשימות.
+ אם ראשי הרשימות זהים - הפרדיקט יבדוק אם אכן האיברים הבאים מתאימים להחלפה
+ תקינה וזנבות הרשימה תקינים - ויסתפק בהתאם.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מימשנו את הפרדיקט 
+\begin_inset Formula $bubblesort$
+\end_inset
+
+ הקורא לעצמו רקורסיבית כל עוד ניתן להפעיל את 
+\begin_inset Formula $swap$
+\end_inset
+
+ על הרשימה הראשונה שניתנה לו.
+ לאחר שלא ניתן עוד להפעיל את 
+\begin_inset Formula $swap$
+\end_inset
+
+ )כלומר - הרשימה הראשונה ממוינת( הוא משווה בין שתי הרשימות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
+\begin_inset Formula $mymerge$
+\end_inset
+
+ המסתפק אמ"מ הרשימה השלישית שניתנת לו ממויינת ומתקבלת ממיזוג שתי הראשונות
+ )אנו מניחים כי הן ממויינות(.
+ הפרדיקט פועל רקורסיבית כאשר בכל פעם הוא משווה את האיבר הראשון ברשימה השלישית
+ לקטן מבין שני האיברים הראשונים של שתי הרשימות האחרות.
+\end_layout
+
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
+\begin_inset Formula $divide$
+\end_inset
+
+ המסתפק אמ"מ שתי הרשימות הראשונות שניתנות לו מרכיבות יחדיו את השלישית, ו)כמעט(
+ זהות באורכן.
+ בכל צעד רקורסיבי הפרדיקט משווה את האיבר הראשון ברשימה השלישית לאיבר הראשון
+ ברשימה הראשונה, ואת האיבר השני ברשימה השלישית לראשון ברשימה השניה.
+ כאשר הרשימה השלישית היא בת איבר אחד בדיוק - נדרוש שהרשימה השניה תהיה ריקה
+ והראשונה בת אותו איבר.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מימשנו את הפרדיקט 
+\begin_inset Formula $mergesort$
+\end_inset
+
+ המסתפק אמ"מ הרשימה השניה מתקבלת ממיון של הראשונה.
+ המיון מתבצע באמצעות חלוקת הרשימה הראשונה לשתי תתי רשימות, קריאה רקורסיבית
+ לפרדיקט, איחוד שתי הרשימות הממויינות באמצעות 
+\begin_inset Formula $mymerge$
+\end_inset
+
+ ולבסוף השוואה לרשימה השניה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+עצים
+\end_layout
+
+\begin_layout Enumerate
+שמות העצם המתאימים לעצים - 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+tree(1,tree(2,nil,nil),tree(3,nil,nil)).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+tree(a, tree(b,tree(d,nil,nil),tree(e,nil,nil)), tree(c,tree(f,nil,nil),tree(g,n
+il,nil))).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כתבנו פרדיקט בשם 
+\begin_inset Formula $binarytree$
+\end_inset
+
+ המסתפק אמ"מ הקלט שלו הוא עץ בינארי.
+ ע"פ הגדרה - הפרדיקט מסתפק עבור 
+\begin_inset Formula $nil$
+\end_inset
+
+ או עבור 
+\begin_inset Formula $tree$
+\end_inset
+
+ כאשר הפרמטר הראשון שלו הוא ש"ע שרירותי ו-
+\begin_inset Formula $binarytree$
+\end_inset
+
+ מסתפק על שני הפרמטרים הבאים.
+\end_layout
+
+\begin_layout Enumerate
+כתבנו את הפרידקט 
+\begin_inset Formula $full$
+\end_inset
+
+ המסתפק אמ"א הקלט שלו הוא עץ בינארי מלא.
+ הפרדיקט יסתפק עבור 
+\begin_inset Formula $nil$
+\end_inset
+
+, עבור 
+\begin_inset Formula $tree$
+\end_inset
+
+ עם משתנה ראשון כלשהו ושני הבאים 
+\begin_inset Formula $nil$
+\end_inset
+
+ )עלה(, או עבור 
+\begin_inset Formula $tree$
+\end_inset
+
+ כאשר שני המשתנים הבאים אינם 
+\begin_inset Formula $nil$
+\end_inset
+
+, ו-
+\begin_inset Formula $full$
+\end_inset
+
+ מסתפק עליהם.
+\end_layout
+
+\begin_layout Enumerate
+כתבנו את הפריקט 
+\begin_inset Formula $depth$
+\end_inset
+
+ המחשב את העומק של העץ הבינארי שניתן לו כפרמטר ראשון, ומסתפק אמ"מ הוא זהה
+ לפרמטר השני שניתן לו.
+ 
+\begin_inset Formula $depth$
+\end_inset
+
+ על 
+\begin_inset Formula $nil$
+\end_inset
+
+ מוגדר להיות אפס, במקרה של עץ בינארי מורכב יותר 
+\begin_inset Formula $depth$
+\end_inset
+
+ תקרא רקורסיבית על שני הבנים ותדרוש שהעומק של העץ יהיה אחד יותר מהמקסימום
+ בין שתי הקריאות )על שני הבנים(.
+\end_layout
+
+\begin_layout Enumerate
+כתבנו את הפרדיקט 
+\begin_inset Formula $complete$
+\end_inset
+
+ המסתפק אמ"מ הפרמטר שניתן לו הוא עץ בינארי שלם.
+ השתמשנו בפרדיקט עזר בשם - 
+\begin_inset Formula $completedepth$
+\end_inset
+
+ המקבל שני פרמטרים ומסתפק אמ"מ הראשון הוא עץ בינארי שלם בעומק השווה לשני.
+ הפרדיקט הזה מחושב רקורסיבית, כאשר הוא דורש שהאיבר הראשון יהיה 
+\begin_inset Formula $nil$
+\end_inset
+
+ והעומק 
+\begin_inset Formula $0$
+\end_inset
+
+ או ששני הבנים יחזירו את אותו עומק.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $complete\left(T\right)$
+\end_inset
+
+ יסתפק אמ"מ קיים עומק כלשהו 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $completedepth\left(T,N\right)$
+\end_inset
+
+ יסתפק.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מימשנו את הפרדיקט 
+\begin_inset Formula $getnodesinorder\left(T,X\right)$
+\end_inset
+
+ המציב ל-
+\begin_inset Formula $X$
+\end_inset
+
+ בזה אחר זה את כל הצמתים של 
+\begin_inset Formula $T$
+\end_inset
+
+ בסדר 
+\begin_inset Formula $inorder$
+\end_inset
+
+.
+ הפרדיקט יציב ל-
+\begin_inset Formula $X$
+\end_inset
+
+ את ש"ע המתאים אם 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא עלה )מהצורה - 
+\begin_inset Formula $tree\left(\_,nil,nil\right)$
+\end_inset
+
+(, או יקרא לעצמו רקורסיבית על העלה השמאלי, אז )אם "או" בין המקרים( יציב
+ את שם העצם המתאים ואז יקרא לעצמו על הימני - אם הם לא 
+\begin_inset Formula $nil$
+\end_inset
+
+.
 \end_layout
 
 \end_body
